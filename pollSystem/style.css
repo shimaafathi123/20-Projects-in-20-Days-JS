@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color:#f3f3f3;
+    padding:0;
+    margin:0;
+}
+
+.container{
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    padding:20px;
+    text-align:center;
+    animation: popUp 1s 1 ease-in-out;
+}
+
+@keyframes popUp{
+    from{
+        transform:scale(0);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
